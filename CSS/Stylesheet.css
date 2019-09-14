@@ -18,16 +18,57 @@ nav {
   background: white;
 }
 .joinus {
-  max-width: 1000px;
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-    "join join join text text text"
-    "pic1 pic1 pic2 pic2 pic3 pic3 "
-    "child child adult adult old old"
-    "space about about about about space";
+    "join join join us us us"
+    "pic1 pic1 pic2 pic2 pic3 pic3"
+    "text text text text text text";
   grid-gap: 0.5rem;
+}
+.join {
+  background: #fcf;
+  grid-area: join;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.us {
+  background: #ffc;
+  grid-area: us;
+}
+.text {
+  background: #cfc;
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.pic1 {
+  background: #fcf;
+  grid-area: pic1;
+}
+.pic2 {
+  background: #ccf;
+  grid-area: pic2;
+}
+.pic3 {
+  background: #cff;
+  grid-area: pic3;
+}
+h1.financial {
+  color: #ffffff;
+}
+h1.about-us {
+  color: #ffffff;
+}
+button {
+  background: #ffffff;
+  border-radius: 20px;
 }
 .how-it-works {
   width: 100%;
