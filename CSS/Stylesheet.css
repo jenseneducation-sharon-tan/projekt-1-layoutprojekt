@@ -9,3 +9,35 @@ main {
   margin: auto;
   background: gray;
 }
+.top {
+  width: 100%;
+  background: lightblue;
+}
+nav {
+  width: 100%;
+  background: white;
+}
+.joinus {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "join join join text text text"
+    "pic1 pic1 pic2 pic2 pic3 pic3 "
+    "child child adult adult old old"
+    "space about about about about space";
+  grid-gap: 0.5rem;
+}
+.how-it-works {
+  width: 100%;
+}
+footer {
+  width: 100%;
+}
+.mail-us {
+  width: 100%;
+}
+.visit {
+  width: 100%;
+}
