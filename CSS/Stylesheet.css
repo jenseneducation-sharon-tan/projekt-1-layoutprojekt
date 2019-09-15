@@ -128,3 +128,77 @@ a:hover {
   color: black;
   opacity: 0.5;
 }
+
+.top {
+  width: 100%;
+  background: lightblue;
+}
+nav {
+  width: 100%;
+  background: white;
+}
+.joinus {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "join join join us us us"
+    "pic1 pic1 pic2 pic2 pic3 pic3"
+    "text text text text text text";
+  grid-gap: 0.5rem;
+}
+.join {
+  background: #fcf;
+  grid-area: join;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.us {
+  background: #ffc;
+  grid-area: us;
+}
+.text {
+  background: #cfc;
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.pic1 {
+  background: #fcf;
+  grid-area: pic1;
+}
+.pic2 {
+  background: #ccf;
+  grid-area: pic2;
+}
+.pic3 {
+  background: #cff;
+  grid-area: pic3;
+}
+h1.financial {
+  color: #ffffff;
+}
+h1.about-us {
+  color: #ffffff;
+}
+button {
+  background: #ffffff;
+  border-radius: 20px;
+}
+.how-it-works {
+  width: 100%;
+}
+footer {
+  width: 100%;
+}
+.mail-us {
+  width: 100%;
+}
+.visit {
+  width: 100%;
+}
