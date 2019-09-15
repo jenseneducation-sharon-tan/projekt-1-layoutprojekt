@@ -135,7 +135,7 @@ footer {
   margin-top: 0;
 }
 
-.bottom {
+.end {
   display: Flex;
   flex-direction: column;
   align-items: center;
