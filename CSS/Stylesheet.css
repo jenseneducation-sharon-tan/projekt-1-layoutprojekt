@@ -144,7 +144,7 @@ nav {
   grid-template-rows: auto;
   grid-template-areas:
     "join join join us us us"
-    "pic1 pic1 pic2 pic2 pic3 pic3"
+    "pic pic pic pic pic pic"
     "text text text text text text";
   grid-gap: 0.5rem;
 }
@@ -168,22 +168,55 @@ nav {
   justify-content: flex-start;
   align-items: center;
 }
-.pic1 {
+.pic {
   background: #fcf;
-  grid-area: pic1;
+  grid-area: pic;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "up"
+    "down";
 }
-.pic2 {
-  background: #ccf;
-  grid-area: pic2;
+.up {
+  background: orange;
+  grid-area: up;
+  height: 150px;
 }
-.pic3 {
-  background: #cff;
-  grid-area: pic3;
+.down {
+  background: lightblue;
+  grid-area: down;
+  height: 150px;
+}
+.customer {
+  position: absolute;
+  z-index: 999;
+  width: 80%;
+  height: 300px;
+  margin: 30px 30px 50px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.intro {
+  width: 30%;
+  height: 200px;
+  background: #ffffff;
+  margin: 1rem;
+  border-radius: 10px;
+}
+.image {
+  width: 90%;
+  padding: -20px;
 }
 h1.financial {
   color: #ffffff;
 }
 h1.about-us {
+  color: #ffffff;
+}
+h1.visit-us {
   color: #ffffff;
 }
 button {
@@ -201,4 +234,14 @@ footer {
 }
 .visit {
   width: 100%;
+}
+.come-visit {
+  background-color: orange;
+  position: absolute;
+  margin: 60px 0px 0px 50px;
+  padding: 3rem;
+  z-index: 999;
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
 }
