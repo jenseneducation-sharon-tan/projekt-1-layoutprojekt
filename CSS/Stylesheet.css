@@ -27,70 +27,44 @@ main {
   margin-right: 10px;
 }
 
-.part1 h1 {
-  margin: 50px 100px 0px 150px;
-}
-.part1 p {
-  line-height: 30px;
-  margin: 20px 100px 0px 150px;
-}
-.part1 strong {
-  color: white;
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-template-rows: 400px 400px 80px 400px;
+  grid-template-areas:
+    "box-1  box-2  box-3  "
+    "box-4  box-5  box-6  "
+    "footer  footer  footer "
+    "empty empty empty ";
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  color: #585858;
 }
 
-.part1 button {
-  font-weight: bold;
-  width: 120px;
-  padding: 12px;
-  border-radius: 17px;
-  margin-left: 150px;
-  position: relative;
-  top: 100px;
+aside {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 2em;
+  padding: 30px;
+  color: gray;
 }
 
-.part2 {
-  flex: 1;
+.four {
+  color: #b34700;
+}
+
+.box-1 {
+  display: flex;
   flex-direction: column;
-  display: flex;
-}
-.part2-1 {
-  display: flex;
-  flex: 1;
-  background: rgb(240, 105, 57);
-  flex-direction: column-reverse;
   justify-content: center;
-  align-items: center;
-}
-.part2-2 {
-  display: flex;
-  flex: 1;
-  background: orange;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-}
-.part2 h2 {
-  font-size: 40px;
-  color: white;
-  margin-top: 0;
-}
-.part2 h5 {
-  margin-bottom: 10px;
-}
-
-.topnav ul {
-  display: flex;
-  justify-content: center;
-  background: lightgray;
-  justify-content: space-around;
-  list-style: none;
-  margin: 0px;
-  padding: 20px 170px;
-}
-.topnav a {
-  text-decoration: none;
+  align-items: Center;
+  font-size: 3rem;
+  font-weight: 700;
+  grid-area: box-1;
+  background: #c2d4dd;
   color: black;
-  opacity: 0.5;
 }
 
 /* second page */
@@ -109,20 +83,33 @@ main {
   width: 20%;
   align-self: flex-end;
   margin: 0px 50px;
+.how {
+  margin: 0;
 }
-.page2nav ul {
-  display: flex;
-  justify-content: center;
-  background: lightgray;
-  justify-content: space-around;
-  list-style: none;
-  margin: 0px;
-  padding: 20px 170px;
+
+.works {
+  margin: 0;
 }
-.page2nav a {
-  text-decoration: none;
-  color: black;
-  opacity: 0.5;
+
+.box-2 {
+  grid-area: box-2;
+  background: white;
+}
+
+.second {
+  text-align: center;
+  padding: 40px;
+}
+
+.box-3 {
+  grid-area: box-3;
+  text-align: center;
+  background: lightgrey;
+}
+
+.third {
+  padding-top: 40px;
+  margin-bottom: 0;
 }
 a:hover.home {
   opacity: 1;
@@ -349,12 +336,12 @@ button {
 
 /* Cindy */
 
-.top {
-  width: 100%;
-  background: lightblue;
+.quote {
+  margin: 0;
 }
-nav {
-  width: 100%;
+
+.box-4 {
+  grid-area: box-4;
   background: white;
 }
 .joinus {
@@ -444,15 +431,59 @@ img.child {
   height: 150px;
   object-fit: cover;
   position: relative;
+
+.fourth {
+  width: 280px;
+  padding: 40px;
+  text-align: center;
 }
-h1.financial {
-  color: #ffffff;
+
+.box-5 {
+  grid-area: box-5;
+  background: #ff7b25;
 }
-h1.about-us {
-  color: #ffffff;
+
+.fifth {
+  padding: 50px 40px 40px 40px;
+  color: #662900;
 }
-h1.visit-us {
-  color: #ffffff;
+
+.box-6 {
+  grid-area: box-6;
+  background: white;
+}
+
+.sixth {
+  padding: 50px;
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+  background: #a6a6a6;
+}
+
+.empty {
+  grid-area: empty;
+  background: gray;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  color: black;
+  margin-top: 0;
+}
+
+.end {
+  display: Flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
 }
 button {
   background: #ffffff;
@@ -460,9 +491,13 @@ button {
   height: 40px;
   border-radius: 20px;
   font-size: 15px;
+
+a {
+  text-decoration: none;
 }
-.how-it-works {
-  width: 100%;
+
+a:hover {
+  color: red;
 }
 .mail-us {
   width: 100%;
@@ -479,4 +514,7 @@ button {
   width: 200px;
   height: 150px;
   border-radius: 5px;
+
+a:visited {
+  color: blue;
 }
